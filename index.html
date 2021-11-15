@@ -22,6 +22,7 @@ You send that invitation to the direct dependency author, and every downstream a
 When you choose to depend on other projects, consider whether you will use the dependency in standard and common ways. You may want to look for an alternative if you would test the boundaries of its' functionality.
 </p>
 </br>
+
 <h4>Articles discussing dependency management</h4>
 <p>
 Though the title is dramatic, <a href="https://medium.freecodecamp.org/code-dependencies-are-the-devil-35ed28b556d">Code dependencies are the devil</a> provides a great overview of why dependencies should be added with care. It contains a set of questions to help you evaluate whether to add a project as a dependency. 
@@ -42,14 +43,21 @@ Though the title is dramatic, <a href="https://medium.freecodecamp.org/code-depe
 <a href="https://frankchimero.com/">Frank Chimero</a> wrote an insightful post <a href="https://frankchimero.com/blog/2018/everything-easy/">Everything Easy is Hard Again<a> (based on two earlier talks) about toolchains and workflows (in the web development context) that is very relevant and insightful for the R development case too. 
 </p>
 </br>
+
 <h4>Stable dependencies need less work</h4>
 <p>
 <a href="http://dirk.eddelbuettel.com/">Dirk Eddelbuettel</a> created a project for <a href="https://github.com/eddelbuettel/r-ci">Continuous Integration for R at Travis, GitHub, Azure, etc.</a> that is the successor of the <a href="https://github.com/eddelbuettel/r-travis">r-travis</a> project. Dirk forked the r-travis project when the original project added many non-base R dependencies. Like r-travis, r-ci has few dependencies and aims to be very stable. A user (<a href="https://github.com/erikcs">erikca</a>) <a href="https://github.com/eddelbuettel/r-ci/issues/6">praised r-ci</a> for its stability:
 <blockquote>We've been running this for 6 months on Azure - and it has performed without any hiccup whatsoever (except the rare timeout here and there from the CI provider).</blockquote>
 </p>
+
 <p>
 <a href="https://jefftk.com">Jeff Kaufman</a> wrote a very good essay on <a href="https://www.jefftk.com/p/designing-low-upkeep-software">Designing Low Upkeep Software</a>. It stresses that <em>[t]he
 biggest piece is minimizing your dependencies, and limiting them to ones that value backwards compatibility</em> as well as a few other points which resonate with other points made here.
 </p>
+
+<p> <a href="https://www.sidebits.tech/">Milosz Danczak</a> as good post on <a href="https://blog.sidebits.tech/life-is-too-short-to-depend-on-unstable-software/">Life is too shoort to depend on
+unstable software</a> that opens with <em>When committing to a piece of software, favor those created by people who value backward compatibility.</em> and it worth reading in full.
+</p>
+
 <br>
 </body></html>
